@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Paris - The City of Lights</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Header */
+    header {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 1em 2em;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Main */
+    main {
+      margin-top: 80px; /* space below fixed header */
+    }
+
+    .section {
+      padding: 100px 50px;
+      text-align: center;
+      color: #fff;
+      border-bottom: 3px solid #fff;
+    }
+
+    /* About Section - with background image and fixed attachment */
+    .about {
+      background-image: url('https://images.unsplash.com/photo-1508057198894-247b23fe5ade');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* Linear Gradient Section */
+    .gradient-linear {
+      background: linear-gradient(to right, #ff7e5f, #feb47b);
+    }
+
+    /* Radial Gradient Section */
+    .gradient-radial {
+      background: radial-gradient(circle, #6a11cb, #2575fc);
+    }
+
+    /* Food Section - Parallax effect */
+    .food {
+      background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836');
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: center;
+    }
+
+    /* Headings and Text */
+    h2 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Discover Paris</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#landmarks">Landmarks</a>
+      <a href="#culture">Culture</a>
+      <a href="#food">Food</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <h2>About Paris</h2>
+      <p>Paris, the capital city of France, is known for its art, culture, and rich history. Often called "The City of Lights", it attracts millions of tourists every year.</p>
+    </section>
+
+    <!-- Landmarks Section (Linear Gradient) -->
+    <section id="landmarks" class="section gradient-linear">
+      <h2>Famous Landmarks</h2>
+      <p>From the iconic Eiffel Tower to the Louvre Museum, Paris is filled with breathtaking architecture and world-renowned landmarks.</p>
+    </section>
+
+    <!-- Culture Section (Radial Gradient) -->
+    <section id="culture" class="section gradient-radial">
+      <h2>Parisian Culture</h2>
+      <p>Paris is home to classical music, fashion, and a vibrant café culture that reflects its artistic soul.</p>
+    </section>
+
+    <!-- Food Section (Background Image with Fixed Attachment) -->
+    <section id="food" class="section food">
+      <h2>French Cuisine</h2>
+      <p>Paris offers an unforgettable culinary experience — from freshly baked croissants to fine dining in Michelin-starred restaurants.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Discover Paris | Designed by Gitesh</p>
+  </footer>
+</body>
+</html>
