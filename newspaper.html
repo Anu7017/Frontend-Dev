@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Times - CSS Newspaper Layout</title>
+
+  <style>
+    body {
+      font-family: "Georgia", serif;
+      background-color: #f4f0e6;
+      color: #333;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .newspaper {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      column-count: 3;
+      column-gap: 40px;
+      text-align: justify;
+    }
+
+    h1 {
+      column-span: all;
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #222;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    img {
+      float: left;
+      margin: 10px 20px 10px 0;
+      border-radius: 6px;
+      width: 200px;
+      height: auto;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+
+    @media (max-width: 900px) {
+      .newspaper {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .newspaper {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="newspaper">
+    <h1>The Daily Times</h1>
+
+    <img src="https://picsum.photos/id/1011/400/300" alt="City View">
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, dui velit bibendum lorem, non imperdiet tortor neque vel justo.</p>
+
+    <p>Aliquam erat volutpat. Integer sed sem at elit vestibulum dictum. Nam non lectus ac lorem dictum suscipit. Cras pretium libero et mauris varius, in accumsan justo posuere. Nulla facilisi.</p>
+
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce sagittis, arcu ac aliquam iaculis, augue justo fermentum urna, sed porttitor libero nulla in nisl.</p>
+
+    <p>Quisque luctus consequat ex, sed tempor metus dignissim at. Phasellus mattis tincidunt lorem, id rhoncus neque placerat ac. Sed cursus sapien id ante aliquet, non commodo purus ultricies.</p>
+
+    <p>In non magna non erat dictum feugiat. Integer ut ex at risus finibus maximus. Sed ullamcorper interdum nisi, a varius libero. Suspendisse non sodales nisl. Nulla eu mauris sed lacus malesuada luctus.</p>
+  </div>
+</body>
+</html>
