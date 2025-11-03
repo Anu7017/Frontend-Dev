@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      padding: 50px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+    }
+
+    /* Container */
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      gap: 20px;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Card Styling */
+    .plan {
+      background-color: white;
+      flex: 1;
+      min-width: 280px;
+      border: 2px solid #ddd;
+      border-radius: 12px;
+      text-align: center;
+      padding: 30px 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .plan:hover {
+      transform: scale(1.05);
+      background-color: #e8f4ff;
+      border-color: #0077b6;
+    }
+
+    /* Highlighted (Popular) Plan */
+    .popular {
+      border: 3px solid #0077b6;
+      background-color: #f0f9ff;
+    }
+
+    .plan h2 {
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+      color: #0077b6;
+    }
+
+    .price {
+      font-size: 2rem;
+      margin: 20px 0;
+      color: #222;
+    }
+
+    ul {
+      list-style: none;
+      margin-bottom: 25px;
+    }
+
+    ul li {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    a.button {
+      text-decoration: none;
+      background-color: #0077b6;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #005f8f;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 700px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      .plan {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Our Pricing Plans</h1>
+
+  <div class="pricing-container">
+    <!-- Basic Plan -->
+    <div class="plan">
+      <h2>Basic</h2>
+      <div class="price">$9/mo</div>
+      <ul>
+        <li>✔ 10 Projects</li>
+        <li>✔ 5 GB Storage</li>
+        <li>✔ Email Support</li>
+        <li>✖ Custom Domain</li>
+      </ul>
+      <a href="#" class="button">Choose Plan</a>
+    </div>
+
+    <!-- Standard Plan (Popular) -->
+    <div class="plan popular">
+      <h2>Standard</h2>
+      <div class="price">$19/mo</div>
+      <ul>
+        <li>✔ 25 Projects</li>
+        <li>✔ 20 GB Storage</li>
+        <li>✔ Priority Support</li>
+        <li>✔ Custom Domain</li>
+      </ul>
+      <a href="#" class="button">Choose Plan</a>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="plan">
+      <h2>Premium</h2>
+      <div class="price">$39/mo</div>
+      <ul>
+        <li>✔ Unlimited Projects</li>
+        <li>✔ 100 GB Storage</li>
+        <li>✔ 24/7 Support</li>
+        <li>✔ Custom Integrations</li>
+      </ul>
+      <a href="#" class="button">Choose Plan</a>
+    </div>
+  </div>
+</body>
+</html>
