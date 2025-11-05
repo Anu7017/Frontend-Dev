@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model Exploration</title>
+  <link rel="stylesheet" href="box-model.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Box Model Exploration</h1>
+  </header>
+
+  <main>
+    <!-- Container using Flexbox -->
+    <div class="container">
+      
+      <!-- ===== Default Box Model ===== -->
+      <section class="box-demo default-box">
+        <h2>Default Box Model</h2>
+        <div class="box">
+          <p>Content Area</p>
+        </div>
+        <p class="description">
+          In the default <strong>content-box</strong> model, the width and height only include the <em>content</em> — padding, border, and margin are added outside.
+        </p>
+      </section>
+
+      <!-- ===== Border-Box Model ===== -->
+      <section class="box-demo border-box">
+        <h2>Border-Box Model</h2>
+        <div class="box border-sizing">
+          <p>Content Area</p>
+        </div>
+        <p class="description">
+          With <strong>box-sizing: border-box;</strong>, the total width and height include <em>content, padding, and border</em>, making layout easier and more predictable.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Box Model Demonstration</p>
+  </footer>
+</body>
+</html>
