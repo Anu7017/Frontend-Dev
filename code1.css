@@ -1,0 +1,17 @@
+/* Custom CSS for Question 1 */
+
+/* Add spacing and background */
+body {
+  background-color: #f8f9fa; /* light grey background */
+}
+
+/* Style for headings */
+h1, h2 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Footer text styling */
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
