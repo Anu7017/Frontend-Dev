@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Main container -->
+  <header class="container py-5">
+    <!-- Center everything using text-center -->
+    <div class="text-center p-5 rounded shadow-sm bg-white">
+      <!-- Name and tagline (uses spacing / text utilities) -->
+      <h1 class="fw-bold mb-2 mt-4">Your Name</h1>
+      <p class="mb-4 text-muted">Designer • Developer • Problem solver</p>
+
+      <!-- Profile image -->
+      <!-- .img-fluid makes it responsive, .rounded-circle makes it circular -->
+      <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600&q=80"
+           alt="Profile photo"
+           class="img-fluid rounded-circle mb-4" style="width:150px; height:150px; object-fit:cover;">
+
+      <!-- Action buttons -->
+      <div class="mb-4">
+        <!-- Use Bootstrap button classes -->
+        <a href="#contact" class="btn btn-primary me-2">Hire Me</a>
+        <a href="files/YourName_CV.pdf" class="btn btn-outline-secondary" download>Download CV</a>
+      </div>
+
+      <!-- Small contact form (keeps it minimal) -->
+      <form id="contact" class="row g-2 justify-content-center">
+        <div class="col-12 col-md-6">
+          <!-- .form-control required; small form so single input + submit -->
+          <input type="email" class="form-control" placeholder="Your email" aria-label="Email">
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-success">Get in touch</button>
+        </div>
+      </form>
+
+      <!-- Small footer text -->
+      <p class="mt-3 mb-0 text-muted">Based in City, Country — Open for remote work</p>
+    </div>
+  </header>
+
+  <!-- Optional smaller bio / skills section -->
+  <main class="container mb-5">
+    <section class="text-center p-4 bg-white rounded shadow-sm">
+      <h2 class="h5 fw-bold mt-2">About me</h2>
+      <p class="mb-3">Short 1–2 sentence summary highlighting your skills and what you build.</p>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <!-- small badges for skills -->
+        <span class="badge bg-secondary">HTML</span>
+        <span class="badge bg-secondary">CSS</span>
+        <span class="badge bg-secondary">Bootstrap</span>
+        <span class="badge bg-secondary">JavaScript</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container text-center mb-5">
+    <small class="text-muted">© <span id="year"></span> Your Name</small>
+  </footer>
+
+  <!-- Minimal inline script to update year (not required by assignment but convenient) -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
