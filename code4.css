@@ -1,0 +1,18 @@
+/* styles.css */
+
+/* Give the page a soft, inviting restaurant vibe */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Optional: slightly round table corners */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Subtle hover effect on list-group items */
+.list-group-item:hover {
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease;
+}
