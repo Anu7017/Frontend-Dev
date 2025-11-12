@@ -1,0 +1,45 @@
+/* Custom Theme Overrides */
+
+/* 1️⃣ Override Bootstrap variables */
+:root {
+  --bs-primary: #d63384; /* Custom pinkish theme color */
+  --bs-font-sans-serif: 'Poppins', sans-serif; /* Custom Google font */
+}
+
+/* 2️⃣ Apply theme globally */
+body {
+  font-family: var(--bs-font-sans-serif);
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+/* 3️⃣ Customize buttons */
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b52d6f;
+  border-color: #b52d6f;
+}
+
+/* 4️⃣ Card and heading styling */
+.card-title {
+  color: var(--bs-primary);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
+}
+
+/* 5️⃣ Optional: Header gradient effect */
+header.bg-primary {
+  background: linear-gradient(90deg, #d63384 0%, #ff5c9f 100%);
+}
