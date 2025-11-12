@@ -1,0 +1,18 @@
+/* styles.css */
+
+/* Add hover and transition effect to product cards */
+.product-card {
+  transition: all 0.3s ease; /* smooth hover animation */
+}
+
+/* On hover, slightly lift and shadow the card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* like .shadow-sm */
+}
+
+/* Optional: style product images uniformly */
+.product-card img {
+  object-fit: cover;
+  border-radius: 8px;
+}
