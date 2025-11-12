@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restaurant Menu</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Header -->
+  <header class="text-center py-5 bg-white shadow-sm mb-4">
+    <h1 class="fw-bold">Gourmet Delights</h1>
+    <p class="lead text-muted">Taste the freshness — every bite tells a story!</p>
+  </header>
+
+  <!-- Main Section -->
+  <main class="container">
+
+    <!-- Food Image with Caption -->
+    <section class="text-center mb-5">
+      <img src="https://images.unsplash.com/photo-1600891964091-27e4b1f1a1b1?w=800&q=80" 
+           alt="Delicious Dish" 
+           class="img-fluid rounded shadow-sm mb-2"
+           style="max-height: 350px; object-fit: cover;">
+      <figcaption class="text-muted">Chef’s Signature Pasta — a must-try!</figcaption>
+    </section>
+
+    <!-- Today's Menu Table -->
+    <section class="mb-5">
+      <h2 class="text-center fw-bold mb-3">Today's Menu</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover align-middle shadow-sm">
+          <thead class="table-dark text-center">
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Dish Name</th>
+              <th scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody class="text-center">
+            <tr>
+              <td>Starters</td>
+              <td>Bruschetta</td>
+              <td>$6.50</td>
+            </tr>
+            <tr>
+              <td>Starters</td>
+              <td>Tomato Soup</td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td>Main Course</td>
+              <td>Grilled Salmon</td>
+              <td>$14.00</td>
+            </tr>
+            <tr>
+              <td>Main Course</td>
+              <td>Margherita Pizza</td>
+              <td>$12.00</td>
+            </tr>
+            <tr>
+              <td>Desserts</td>
+              <td>Chocolate Lava Cake</td>
+              <td>$7.00</td>
+            </tr>
+            <tr>
+              <td>Beverages</td>
+              <td>Fresh Lemonade</td>
+              <td>$3.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Chef’s Specials List Group -->
+    <section class="mb-5">
+      <h3 class="text-center fw-bold mb-3">Chef’s Specials</h3>
+      <ul class="list-group shadow-sm">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Truffle Mushroom Risotto
+          <span class="badge bg-success rounded-pill">$15</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          BBQ Lamb Chops
+          <span class="badge bg-success rounded-pill">$18</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Mango Cheesecake
+          <span class="badge bg-success rounded-pill">$8</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-white mt-5 shadow-sm">
+    <p class="text-muted mb-0">&copy; 2025 Gourmet Delights — Crafted with love by our chefs ❤️</p>
+  </footer>
+
+</body>
+</html>
