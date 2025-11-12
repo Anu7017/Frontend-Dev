@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notifications Dashboard</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+
+  <!-- Header -->
+  <header class="text-center py-4 bg-white shadow-sm mb-4">
+    <h1 class="fw-bold">User Notifications</h1>
+    <p class="text-muted mb-0">Stay updated with your latest messages and alerts</p>
+  </header>
+
+  <!-- Main Dashboard -->
+  <main class="container mb-5">
+
+    <!-- Card Wrapper -->
+    <div class="card shadow-sm border-0">
+      <div class="card-body">
+        <h5 class="card-title fw-bold mb-4 text-center text-primary">Notification Center</h5>
+
+        <!-- Success Alert -->
+        <div class="alert alert-success" role="alert">
+          <strong>✅ Success!</strong> You’ve received a new message from the Admin team.
+        </div>
+
+        <!-- Info Alert -->
+        <div class="alert alert-info" role="alert">
+          💡 <strong>Tip:</strong> Check your profile settings to enable two-factor authentication.
+        </div>
+
+        <!-- Danger Alert (Dismissible) -->
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+          ⚠️ <strong>Warning!</strong> Your account password will expire in 3 days.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+
+        <!-- Summary Well (Bootstrap 5 "well" equivalent using bg-light + border + padding) -->
+        <div class="bg-light border rounded p-4 mt-4">
+          <h6 class="fw-bold mb-2">Summary</h6>
+          <p class="mb-1">✔ 1 new message</p>
+          <p class="mb-1">ℹ 1 new tip available</p>
+          <p class="mb-0">⚠ 1 warning pending</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center py-3 bg-white shadow-sm">
+    <p class="mb-0 text-muted">&copy; 2025 Notification Dashboard | Built with Bootstrap</p>
+  </footer>
+
+  <!-- Bootstrap JS (for dismissible alert) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
